@@ -65,3 +65,25 @@ const createrRecommend = async () => {
         slidesToScroll: 5,
     });
 };
+
+// BANNER
+const BANNER_SEARCH_WORD = 'banner';
+const BANNER_PER_PAGE = 5;
+const BANNER_QUERY = new URLSearchParams({ ...QUERY, ...{ per_page: `${BANNER_PER_PAGE}`, text: `${BANNER_SEARCH_WORD}` } });
+const BANNER_URL = `${PATH}?${BANNER_QUERY}`;
+const createrBanner = async () => {
+    const SELECTOR_BANNER = '.js-banner-slick';
+    const recomendTarget = document.querySelector(`${SELECTOR_BANNER}`);
+    const photos = await fetchFlickrPhotos(BANNER_URL);
+    const bannerImg = photos.map(photo => `<li class="banner__item"><img class="recommend__img" src="${photo.url_o}"></li>`).join('');
+    recomendTarget.innerHTML = bannerImg;
+    $('.js-banner-slick').slick({
+        arrows: false,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        centerMode: true,
+        variableWidth: true,
+        autoplay: true,
+    });
+};

@@ -23,25 +23,16 @@
     <script src="./assets/js/modulesB.js"></script>
     <script src="./assets/js/modulesC.js"></script>
     <script src="./assets/js/modulesD.js"></script>
-    <script src="./assets/js/fetchFlickerPhotos.js"></script>
+    <script src="./assets/js/fetchFlickrPhotos.js"></script>
     <script src="./assets/js/apiConfig.js"></script>
+    <script src="./assets/js//createLicensedImageTag.js"></script>
     <script src="./assets/js/top.js"></script>
     <script type="text/javascript">
         $(() => {
             createProductGarally();
             createrRecommend();
+            createrBanner();
         });
-        window.addEventListener('load', () => {
-            $('.js-banner-slick').slick({
-                arrows: false,
-                infinite: true,
-                speed: 300,
-                slidesToShow: 1,
-                centerMode: true,
-                variableWidth: true,
-                autoplay: true,
-            });
-        })
     </script>
     <script src="./assets/js/modulesE.js"></script>
     <script src="./assets/js/modulesF.js"></script>
@@ -55,18 +46,7 @@
     <main class="main">
         <div class="hero mb-[40px]"></div>
         <aside>
-            <ul class="banner js-banner-slick mb-[40px]">
-                <li class="banner__item"><img class="banner__img"
-                        src="https://live.staticflickr.com/4365/37342963665_469fb177fb.jpg" alt=""></li>
-                <li class="banner__item"><img class="banner__img"
-                        src="https://live.staticflickr.com/501/31776263515_67ba745e97_h.jpg" alt=""></li>
-                <li class="banner__item"><img class="banner__img"
-                        src="https://live.staticflickr.com/4549/39072345101_d1e1960e71_z.jpg" alt=""></li>
-                <li class="banner__item"><img class="banner__img"
-                        src="https://live.staticflickr.com/8584/16439804788_6bcb8cbc46_z.jpg" alt=""></li>
-                <li class="banner__item"><img class="banner__img"
-                        src="https://live.staticflickr.com/5719/30996737571_1bd9b60a49_b.jpg" alt=""></li>
-            </ul>
+            <ul class="banner js-banner-slick mb-[40px]"></ul>
         </aside>
         <article>
             <section class="section section-product flex">
