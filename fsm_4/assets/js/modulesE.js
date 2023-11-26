@@ -1,4 +1,9 @@
 console.log('modulesE');
-for (let i = 0; i < 1000; i++) {
-    console.log('E');
-}
+const modulesE = () => {
+    let sum = 0;
+    for (let i = 0; i < 10000; i++) {
+        sum += i;
+    }
+    return sum;
+};
+console.log(modulesE());
