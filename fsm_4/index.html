@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/destyle.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- slickのCSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- jQuery -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
+    <!-- slickのJavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./assets/js/modulesA.js"></script>
+    <script src="./assets/js/modulesB.js"></script>
+    <script src="./assets/js/modulesC.js"></script>
+    <script src="./assets/js/modulesD.js"></script>
+    <script src="./assets/js/fetchFlickerPhotos.js"></script>
+    <script src="./assets/js/apiConfig.js"></script>
+    <script src="./assets/js/top.js"></script>
+    <script type="text/javascript">
+        $(() => {
+            createProductGarally();
+            createrRecommend();
+        });
+        window.addEventListener('load', () => {
+            $('.js-banner-slick').slick({
+                arrows: false,
+                infinite: true,
+                speed: 300,
+                slidesToShow: 1,
+                centerMode: true,
+                variableWidth: true,
+                autoplay: true,
+            });
+        })
+    </script>
+    <script src="./assets/js/modulesE.js"></script>
+    <script src="./assets/js/modulesF.js"></script>
+</head>
+
+<body>
+    <script src="./assets/js/modulesG.js"></script>
+    <header class="header"></header>
+    <main class="main">
+        <aside>
+            <ul class="banner js-banner-slick mb-[40px]">
+                <li class="banner__item"><img class="banner__img"
+                        src="https://live.staticflickr.com/4365/37342963665_469fb177fb.jpg" alt=""></li>
+                <li class="banner__item"><img class="banner__img"
+                        src="https://live.staticflickr.com/501/31776263515_67ba745e97_h.jpg" alt=""></li>
+                <li class="banner__item"><img class="banner__img"
+                        src="https://live.staticflickr.com/4549/39072345101_d1e1960e71_z.jpg" alt=""></li>
+                <li class="banner__item"><img class="banner__img"
+                        src="https://live.staticflickr.com/8584/16439804788_6bcb8cbc46_z.jpg" alt=""></li>
+                <li class="banner__item"><img class="banner__img"
+                        src="https://live.staticflickr.com/5719/30996737571_1bd9b60a49_b.jpg" alt=""></li>
+            </ul>
+        </aside>
+        <article>
+            <section class="section section-product flex">
+                <div class="product-garally js-product-garally mr-[30px]">
+                    <div class="product-garally__main js-product-garally__main"></div>
+                    <div class="product-garally__thumbnails js-product-garally__thumbnails mb-[10px]"></div>
+                    <p>サムネイルをクリックすると画像が切り替わります。</p>
+                </div>
+                <div class="product-detail">
+                    <div class="product-detail__text-group">
+                        <h1 class="product-detail__title">商品A</h1>
+                        <p class="product-detail__text">
+                            それは前ぼうっとその答弁方という方のうちに潜んました。はたして事実と講演人はどうもその講演ななくらいに見るて行くたいでは尊重しますんば、まだには倒さんませですな。</p>
+                        <p class="product-detail__text">
+                            力に教えるだ気は近頃今で依然としてずなな。はなはだ岡田さんが話基礎それほど攻撃が考えです国そんな金力私か活動をというお遠慮なありなでて、その生涯は何か趣味手に云いば、嘉納さんのものに上流の私にもうご講義となるて私秋刀魚が小仕事に外れようにどうしてもお話でついだろたいから、ざっとしっくり運動にするんているですのを執っでます。あるいはしたがって肝国家にやっのはわざわざ簡単と考えなりて、その受合がはしたばという画が勤めからいるますた。その一方町内のところある否はそれごろを怖がったかと木下さんで及ぼすざるな、外国の生涯なくっについてごお話しでますましから、男の上と自己を今なりの学長に次第立ち竦んて致しから、どうの時間が発しからそのうちでまあ起っらしいないと落ちつけるなかっのでて。
+                        </p>
+                        <p class="product-detail__text">
+                            それは前ぼうっとその答弁方という方のうちに潜んました。はたして事実と講演人はどうもその講演ななくらいに見るて行くたいでは尊重しますんば、まだには倒さんませですな。</p>
+                    </div>
+                    <video class="product-detail__video" src="./assets/movie/mov_hts-samp006.mp4" controls></video>
+                </div>
+            </section>
+            <section class="section section-scene">
+                <h2 class="section__title">利用シーン</h2>
+                <div class="scene mb-[30px]">
+                    <img class="scene__img" src="https://live.staticflickr.com/65535/53286952591_2d2ebc0b1d_h.jpg"
+                        alt="sample">
+                    <p class="scene__text">
+                        それは前ぼうっとその答弁方という方のうちに潜んました。はたして事実と講演人はどうもその講演ななくらいに見るて行くたいでは尊重しますんば、まだには倒さんませですな。それは前ぼうっとその答弁方という方のうちに潜んました。はたして事実と講演人はどうもその講演ななくらいに見るて行くたいでは尊重しますんば、まだには倒さんませですな。それは前ぼうっとその答弁方という方のうちに潜んました。はたして事実と講演人はどうもその講演ななくらいに見るて行くたいでは尊重しますんば、まだには倒さんませですな。それは前ぼうっとその答弁方という方のうちに潜んました。はたして事実と講演人はどうもその講演ななくらいに見るて行くたいでは尊重しますんば、まだには倒さんませですな。それは前ぼうっとその答弁方という方のうちに潜んました。はたして事実と講演人はどうもその講演ななくらいに見るて行くたいでは尊重しますんば、まだには倒さんませですな。それは前ぼうっとその答弁方という方のうちに潜んました。はたして事実と講演人はどうもその講演ななくらいに見るて行くたいでは尊重しますんば、まだには倒さんませですな。
+                    </p>
+                </div>
+                <div class="scene scene--text-left mb-[30px]">
+                    <img class="scene__img" src="https://live.staticflickr.com/65535/53280471500_c7c07df449_h.jpg"
+                        alt="sample">
+                    <p class="scene__text">
+                        それは前ぼうっとその答弁方という方のうちに潜んました。はたして事実と講演人はどうもその講演ななくらいに見るて行くたいでは尊重しますんば、まだには倒さんませですな。それは前ぼうっとその答弁方という方のうちに潜んました。はたして事実と講演人はどうもその講演ななくらいに見るて行くたいでは尊重しますんば、まだには倒さんませですな。それは前ぼうっとその答弁方という方のうちに潜んました。はたして事実と講演人はどうもその講演ななくらいに見るて行くたいでは尊重しますんば、まだには倒さんませですな。それは前ぼうっとその答弁方という方のうちに潜んました。はたして事実と講演人はどうもその講演ななくらいに見るて行くたいでは尊重しますんば、まだには倒さんませですな。それは前ぼうっとその答弁方という方のうちに潜んました。はたして事実と講演人はどうもその講演ななくらいに見るて行くたいでは尊重しますんば、まだには倒さんませですな。それは前ぼうっとその答弁方という方のうちに潜んました。はたして事実と講演人はどうもその講演ななくらいに見るて行くたいでは尊重しますんば、まだには倒さんませですな。
+                    </p>
+                </div>
+                <div class="scene">
+                    <img class="scene__img" src="https://live.staticflickr.com/65535/53265561550_394ea036aa_h.jpg"
+                        alt="sample">
+                    <p class="scene__text">
+                        それは前ぼうっとその答弁方という方のうちに潜んました。はたして事実と講演人はどうもその講演ななくらいに見るて行くたいでは尊重しますんば、まだには倒さんませですな。それは前ぼうっとその答弁方という方のうちに潜んました。はたして事実と講演人はどうもその講演ななくらいに見るて行くたいでは尊重しますんば、まだには倒さんませですな。それは前ぼうっとその答弁方という方のうちに潜んました。はたして事実と講演人はどうもその講演ななくらいに見るて行くたいでは尊重しますんば、まだには倒さんませですな。それは前ぼうっとその答弁方という方のうちに潜んました。はたして事実と講演人はどうもその講演ななくらいに見るて行くたいでは尊重しますんば、まだには倒さんませですな。それは前ぼうっとその答弁方という方のうちに潜んました。はたして事実と講演人はどうもその講演ななくらいに見るて行くたいでは尊重しますんば、まだには倒さんませですな。それは前ぼうっとその答弁方という方のうちに潜んました。はたして事実と講演人はどうもその講演ななくらいに見るて行くたいでは尊重しますんば、まだには倒さんませですな。
+                    </p>
+                </div>
+            </section>
+            <section class="section section-recommend">
+                <h2 class="section__title">おすすめの商品</h2>
+                <ul class="js-slick js-recommend"></ul>
+            </section>
+            <section class="section">
+                <blockquote class="twitter-tweet">
+                    <p lang="en" dir="ltr">Sunsets don&#39;t get much better than this one over <a
+                            href="https://twitter.com/GrandTetonNPS?ref_src=twsrc%5Etfw">@GrandTetonNPS</a>. <a
+                            href="https://twitter.com/hashtag/nature?src=hash&amp;ref_src=twsrc%5Etfw">#nature</a> <a
+                            href="https://twitter.com/hashtag/sunset?src=hash&amp;ref_src=twsrc%5Etfw">#sunset</a> <a
+                            href="http://t.co/YuKy2rcjyU">pic.twitter.com/YuKy2rcjyU</a></p>&mdash; US Department of the
+                    Interior (@Interior) <a
+                        href="https://twitter.com/Interior/status/463440424141459456?ref_src=twsrc%5Etfw">May 5,
+                        2014</a>
+                </blockquote>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </section>
+        </article>
+    </main>
+    <footer class="footer"></footer>
+</body>
+
+</html>
