@@ -1,5 +1,5 @@
 // GARALLY
-const GARALLY_SEARCH_WORD = 'bread';
+const GARALLY_SEARCH_WORD = 'croissant';
 const GARALLY_PER_PAGE = 10;
 const GARALLY_QUERY = new URLSearchParams({ ...QUERY, ...{ per_page: `${GARALLY_PER_PAGE}`, text: `${GARALLY_SEARCH_WORD}` } });
 const GARALLY_URL = `${PATH}?${GARALLY_QUERY}`;
