@@ -32,7 +32,10 @@ const createProductGarally = async () => {
     });
     thumbnailsTarget.appendChild(div);
   });
-  mainTarget.appendChild(mainImg);
+  setTimeout(() => {
+    // 時間のかかる処理
+    mainTarget.appendChild(mainImg);
+  }, 2500);
 };
 
 // RECOMEND
