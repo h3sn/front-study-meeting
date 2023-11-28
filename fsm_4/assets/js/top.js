@@ -10,14 +10,14 @@ const createProductGarally = async () => {
   const thumbnailsTarget = document.querySelector(`${SELECTOR_THUMBNAILS}`);
   const photos = await fetchFlickrPhotos(GARALLY_URL);
   const mainImg = createLicensedImageTag({
-    url: `${photos[0].url_o}`,
+    url: `${photos[0].url_c}`,
     alt: `${photos[0].title}`,
     owner: `${photos[0].owner}`,
     id: `${photos[0].id}`,
   });
   const thumbnailsImg = photos.map((photo) =>
     createLicensedImageTag({
-      url: `${photo.url_o}`,
+      url: `${photo.url_c}`,
       alt: `${photo.title}`,
       owner: `${photo.owner}`,
       id: `${photo.id}`,
@@ -50,7 +50,7 @@ const createrRecommend = async () => {
       (photo) => `
                 <li class="recommend__item">
                     ${createLicensedImageTag({
-                      url: `${photo.url_o}`,
+                      url: `${photo.url_n}`,
                       alt: `${photo.title}`,
                       owner: `${photo.owner}`,
                       id: `${photo.id}`,
